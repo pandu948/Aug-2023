@@ -1,1 +1,1 @@
-This is change has done to check Reset command
+this file is only in the master branch
