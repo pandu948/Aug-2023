@@ -1,0 +1,4 @@
+This file has been created to checck the squash
+All commits
+Commit-1
+
