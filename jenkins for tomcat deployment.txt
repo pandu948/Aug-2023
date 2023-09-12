@@ -1,0 +1,21 @@
+pipeline{
+	agnet any
+	stages{
+	stage ('Build'){
+			steps{
+				sh 'mvn clean package'
+			}
+			post{
+				sucess{
+					echo "Archiving the Artifacts"
+					archiveArtifacts: '**/target/*.war
+				}
+			}
+		}
+		stage ('Deploy to tomcat server){
+			steps{
+				deploy adapters: [tomcat9(credentialsId: 'pandu948', path: '', url: 'http://13.235.68.121:9050/')], contextPath: null, war: '**/*.war'
+			}
+		}
+	}
+}
