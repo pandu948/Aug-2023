@@ -15,7 +15,8 @@ pipeline{
 				}
 			}
 		}
-		stage ('Deploy to tomcat server){
+		stage ('Deploy to tomcat server)
+		{
 			steps{
 				deploy adapters: [tomcat9(credentialsId: 'pandu948', path: '*/jenkins for tomcat deployment.txt', url: 'http://13.235.68.121:9050/')], contextPath: null, war: '**/*.war'
 			}
