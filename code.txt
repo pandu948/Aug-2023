@@ -1,4 +1,4 @@
-This file has been created to checck the squash
+This file has been created to check the squash
 All commits
 Commit-1
 Commit-22
