@@ -9,6 +9,7 @@
     <packaging>maven-plugin</packaging>
     <version>1.7.2-SNAPSHOT</version>
 
+         
     <name>Download Plugin for Maven</name>
 
     <!-- Distribution Management, see https://docs.sonatype.org/display/Repository/Sonatype+OSS+Maven+Repository+Usage+Guide
